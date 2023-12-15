@@ -1,0 +1,329 @@
+:root {
+  --sidebar-width: 120px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+.sidebar {
+  width: var(--sidebar-width);
+  text-align: center;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #222;
+  overflow-x: hidden;
+  z-index: 1;
+}
+
+.sidebar img {
+  width: inherit;
+}
+
+.sidebar ul li {
+  list-style: none;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: white;
+}
+
+.fa {
+  padding-bottom: 5px;
+  color: white;
+}
+
+.nav-item {
+  padding: 20px 0;
+}
+
+.nav-item:first-child {
+  background-color: black;
+}
+
+.nav-item:hover {
+  background-color: black;
+  cursor: pointer;
+}
+
+.nav-item:first-child:hover {
+  background-color: #ccc;
+}
+
+.nav-item:first-child:hover .fa,
+.nav-item:first-child:hover a {
+  color: black;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: auto;
+}
+
+.content h1 {
+  font-size: 72px;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.content p {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.intro {
+  margin-bottom: 100px;
+}
+
+hr {
+  width: 20%;
+}
+
+.info p {
+  text-align: left;
+  color: #757575;
+}
+
+.skills {
+  margin-bottom: 50px;
+}
+
+.skills h3 {
+  margin-top: 50px;
+  padding-bottom: 30px;
+}
+
+.skill-list {
+  margin-left: 0;
+}
+
+.skills p {
+  text-align: left;
+  color: #757575;
+  margin: 20px 0;
+  letter-spacing: 5px;
+}
+
+.grading-bar {
+  width: 100%;
+  height: 28px;
+  background-color: white;
+}
+
+.graded-bar {
+  height: 28px;
+  background-color: #616161;
+}
+
+.testimonials {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  width: 100%;
+  height: 120px;
+  background-color: white;
+  margin-bottom: 50px;
+  color: black;
+  padding: 16px;
+  font-size: 20px;
+}
+
+.btn {
+  background-color: white;
+  color: black;
+  padding: 8px 16px;
+  border: none;
+}
+
+.btn:hover {
+  background-color: #ccc;
+}
+
+.fa-download {
+  color: black;
+  margin-right: 5px;
+}
+
+.price {
+  margin: auto;
+  text-align: left;
+  width: 50%;
+}
+
+.price h3 {
+  color: white;
+  padding: 30px 0;
+}
+
+.offers {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.pricing-card {
+  width: 49%;
+  background-color: white;
+  color: black;
+  text-align: center;
+  opacity: 0.6;
+}
+
+.pricing-card h3 {
+  color: black;
+  padding: 0;
+  text-align: center;
+}
+
+.pricing-card h3:first-of-type {
+  background-color: #616161;
+  opacity: 0.6;
+  margin-top: 0;
+  color: white;
+  border: #222;
+  border-bottom: 1px solid black;
+  padding: 32px 16px;
+}
+
+.pricing-card:hover {
+  opacity: 1;
+}
+
+.pricing-card p {
+  border-bottom: 1px solid #ccc;
+  padding: 16px 0px;
+}
+
+.pricing-card p:last-of-type {
+  border-bottom: 1px solid #ccc;
+  padding: 0px 16px 16px 16px;
+}
+
+.sign-btn {
+  padding: 12px 24px;
+  margin: 24px;
+  background-color: white;
+  border: none;
+}
+
+.sign-btn:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.btn-bck {
+  background-color: #f1f1f1;
+}
+
+.rep {
+  margin: auto;
+  text-align: left;
+  width: 50%;
+  margin-bottom: 100px;
+}
+
+.rep h3 {
+  padding: 50px 0px 30px 0px;
+}
+
+.client-img {
+  width: 80px;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.client-testimonials {
+  color: #616161;
+}
+
+.client-testimonials:first-of-type {
+  margin-bottom: 30px;
+}
+
+.client-name {
+  padding-right: 15px;
+}
+
+.photos {
+  margin: auto;
+  text-align: left;
+  width: 50%;
+}
+
+.photo-container {
+  width: 49%;
+}
+
+.photo-gallery {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.photo {
+  width: 100%;
+  margin: 12px;
+}
+
+.contact-info {
+  margin: auto;
+  width: 50%;
+  text-align: left;
+}
+
+.contact-info h2 {
+  padding-top: 150px;
+}
+
+.contact-methods {
+  margin-bottom: 50px;
+}
+
+.contacting {
+  margin: 50px 0;
+}
+
+.contact-inputs {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+}
+
+.msg-btn {
+  padding: 8px 16px;
+  background-color: white;
+  border: none;
+}
+
+.fa-paper-plane {
+  color: #000;
+}
+
+.msg-btn:hover {
+  cursor: pointer;
+  background-color: #ccc;
+}
+
+.socials {
+  width: 50%;
+  margin: auto;
+  margin-top: 150px;
+  margin-bottom: 150px;
+  color: #757575;
+}
