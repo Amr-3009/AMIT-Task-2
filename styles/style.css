@@ -14,6 +14,8 @@ body {
 }
 
 .sidebar {
+  display: flex;
+  flex-direction: column;
   width: var(--sidebar-width);
   text-align: center;
   height: 100vh;
@@ -241,22 +243,17 @@ hr {
   padding: 50px 0px 30px 0px;
 }
 
+.client {
+  display: flex;
+  align-items: center;
+  color: #616161;
+  margin-bottom: 30px;
+}
+
 .client-img {
   width: 80px;
   margin-right: 20px;
   border-radius: 50%;
-}
-
-.client-testimonials {
-  color: #616161;
-}
-
-.client-testimonials:first-of-type {
-  margin-bottom: 30px;
-}
-
-.client-name {
-  padding-right: 15px;
 }
 
 .photos {
@@ -278,7 +275,7 @@ hr {
 
 .photo {
   width: 100%;
-  margin: 12px;
+  margin-bottom: 12px;
 }
 
 .contact-info {
@@ -293,6 +290,7 @@ hr {
 
 .contact-methods {
   margin-bottom: 50px;
+  color: #616161;
 }
 
 .contacting {
@@ -326,4 +324,97 @@ hr {
   margin-top: 150px;
   margin-bottom: 150px;
   color: #757575;
+}
+
+.main-img {
+  width: 100%;
+}
+
+@media screen and (min-width: 375px) and (max-width: 768px) {
+  .content,
+  .price,
+  .rep,
+  .photos,
+  .contact-info,
+  .socials {
+    width: 85%;
+  }
+
+  .offers {
+    flex-direction: column;
+  }
+  .pricing-card {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  .photo-gallery {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .photo-container {
+    width: 100%;
+  }
+
+  .testimonials {
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .testimonials > * {
+    padding: 10px;
+  }
+
+  .sidebar img {
+    display: none;
+  }
+
+  .sidebar ul li i {
+    display: none;
+  }
+
+  .sidebar {
+    width: 100%;
+    text-align: center;
+    height: fit-content;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    overflow-x: hidden;
+    z-index: 1;
+    font-size: 10px;
+  }
+
+  .nav-list {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .sidebar a {
+    color: #b3b1b1;
+  }
+  .sidebar:hover {
+    background-color: rgb(0, 0, 0);
+  }
+  .sidebar:hover a {
+    color: white;
+  }
+
+  .nav-item {
+    padding: 10px 10%;
+  }
+
+  .nav-item:hover {
+    background-color: #ccc;
+  }
+
+  .nav-item:hover a {
+    color: #000;
+  }
+
+  .nav-item:first-child {
+    background-color: initial;
+  }
 }

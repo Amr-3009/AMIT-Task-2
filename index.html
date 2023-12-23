@@ -20,7 +20,7 @@
     <div class="container">
       <navbar class="sidebar">
         <img src="imgs/avatar_smoke.jpg" />
-        <ul class="nav-lis">
+        <ul class="nav-list">
           <li class="nav-item">
             <a href="#home">
               <i class="fa fa-home w3-xxlarge"></i>
@@ -51,7 +51,7 @@
         <section class="intro" id="home">
           <h1>I'm John Doe.</h1>
           <p>Photographer and Web Designer.</p>
-          <img src="imgs/man_smoke.jpg" alt="man" />
+          <img class="main-img" src="imgs/man_smoke.jpg" alt="man" />
         </section>
         <section class="about" id="about">
           <div class="info">
@@ -129,43 +129,31 @@
       <div class="rep">
         <h3>My Reputation</h3>
         <div class="client">
-          <table class="client-testimonials">
-            <tr>
-              <td rowspan="3">
-                <img
-                  class="client-img"
-                  src="imgs/bandmember.jpg"
-                  alt="customer 1"
-                />
-              </td>
-              <td class="client-name">Chris Fox.</td>
-              <td>CEO at Mighty Schools.</td>
-            </tr>
-            <tr>
-              <td rowspan="2" colspan="2">
-                John Doe saved us from a web disaster.
-              </td>
-            </tr>
-          </table>
-          <table class="client-testimonials">
-            <tr>
-              <td rowspan="3">
-                <img
-                  class="client-img"
-                  src="imgs/avatar_g2.jpg"
-                  alt="customer 1"
-                />
-              </td>
-              <td class="client-name">Rebecca Flex.</td>
-              <td>CEO at Company.</td>
-            </tr>
-            <tr>
-              <td rowspan="2" colspan="2">No one is better than John Doe.</td>
-            </tr>
-          </table>
+          <div>
+            <img class="client-img" src="imgs/bandmember.jpg" alt="" />
+          </div>
+          <div class="client-data">
+            <p style="margin-bottom: 15px">
+              <span style="margin-right: 10px">Chris Fox.</span> CEO at Mighty
+              Schools.
+            </p>
+            <p>John Doe saved us from a web disaster.</p>
+          </div>
+        </div>
+        <div class="client">
+          <div>
+            <img class="client-img" src="imgs/bandmember.jpg" alt="" />
+          </div>
+          <div class="client-data">
+            <p style="margin-bottom: 15px">
+              <span style="margin-right: 10px">Chris Fox.</span> CEO at Mighty
+              Schools.
+            </p>
+            <p>John Doe saved us from a web disaster.</p>
+          </div>
         </div>
       </div>
-      <div class="photos">
+      <div class="photos" id="photos">
         <h2>My Photos</h2>
         <hr />
         <div class="photo-gallery">
@@ -183,7 +171,7 @@
           </div>
         </div>
       </div>
-      <div class="contact-info">
+      <div class="contact-info" id="contact">
         <h2>Contact Me</h2>
         <hr />
         <div class="contact-methods">
